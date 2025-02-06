@@ -16,7 +16,7 @@ function draw() {
     image(img, xPos, height / 2 - img.height / 2); 
     
     // Move the image to the right
-    xPos += 2; // Adjust the speed by changing this value
+    xPos += 5; // Adjust the speed by changing this value
     
     // Reset position when the image moves off-screen
     if (xPos > width) {
