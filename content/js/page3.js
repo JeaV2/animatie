@@ -1,4 +1,5 @@
 let ufo;
+let fox;
 let USH = 300;
 let direction = -1;
 
@@ -15,7 +16,7 @@ function draw(){
   clear();
   background(0, 255, 255, 100);
   
-  image(fox, (windowWidth*0.5)-180, 600, 0, 0);
+  image(fox, (windowWidth*0.5)-20, USH + 200, 0, 0); 
 
   image(ufo, (windowWidth*0.5)*0.5, USH, 0, 0);
   
