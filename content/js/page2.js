@@ -30,7 +30,7 @@ function draw() {
     triggered = true;
     setTimeout(() => {
       window.location.href = '/page3.html';
-    }, 3000);
+    }, 1000);
   }
   else {
     return;

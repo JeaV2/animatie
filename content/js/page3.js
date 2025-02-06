@@ -1,7 +1,8 @@
 let ufo;
 let fox;
 let USH = 300;
-let direction = -1;
+let direction = -2;
+let triggered = false;
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
@@ -13,18 +14,28 @@ function preload(){
 }
 
 function draw(){
+  background(0, 255, 255);
   clear();
-  background(0, 255, 255, 100);
   
-  image(fox, (windowWidth*0.5)-20, USH + 200, 0, 0); 
+  image(fox, (windowWidth*0.5)-200, USH + 200, 0, 0); 
 
   image(ufo, (windowWidth*0.5)*0.5, USH, 0, 0);
   
-  if (USH === 300){
-    direction = -1;
+  if (USH === -600){
     console.log(`Spaceship lowered to ${USH}`);
-}
-  
-  USH += direction;
+  }
+  else{
+    USH += direction;
+  }
   console.log(USH);
+
+  if (USH === -600 && triggered === false) {
+    triggered = true;
+    window.location.href = '/page4.html';
+  }
+  else {
+    return;
+  }
+
+
 }
