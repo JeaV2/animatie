@@ -1,5 +1,6 @@
 let img;
 let xPos = 0;
+let triggered = false;
 
 function preload() {
     img = loadImage('../content/img/gnarp-in-ufo.png'); 
@@ -19,6 +20,12 @@ function draw() {
     
     // Reset position when the image moves off-screen
     if (xPos > width) {
-        xPos = -img.width; // Move back to the left side
+        if (triggered === false) {
+            window.location.href = "./page2.html";
+            triggered = true;
+        }
+        else{
+            return;
+        }
     }
 }
