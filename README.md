@@ -1,5 +1,5 @@
 # animatie
-Epiche animantie voor de 2e bootcamp week!!!!!!!!!!!!!!!!!!!!!!!!
+Epische animatie voor de 2e bootcamp week!!!!!!!!!!!!!!!!!!!!!!!!
 
 Featuring Gneepy gnarp de alien!!
 
