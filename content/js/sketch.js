@@ -13,7 +13,8 @@ function preload() {
 
 function draw() {
   setup();
-  background(0, 255, 255, 100);
+  background(0, 255, 255);
+  clear();
   image(fox, (windowWidth*0.5)-180, 600, 0, 0);
 
   image(ufo, (windowWidth*0.5)*0.5, USH, 0, 0);
