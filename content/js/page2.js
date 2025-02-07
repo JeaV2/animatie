@@ -2,9 +2,11 @@
 let ufo;
 let USH = -300
 let triggered = false
+let ufoSound = new Audio('../content/audio/ufo-landing.mp3');
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  ufoSound.play();
 }
 
 function preload() {
