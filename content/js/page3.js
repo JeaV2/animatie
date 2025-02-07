@@ -3,9 +3,11 @@ let fox;
 let USH = 300;
 let direction = -2;
 let triggered = false;
+let ufoSound = new Audio('../content/audio/ufo-landing.mp3');
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
+  ufoSound.play();
 }
 
 function preload(){
