@@ -1,7 +1,7 @@
 let img;
 let xPos = 0;
 let triggered = false;
-let ufoSound = new Audio('../content/audio/ufo-landing.mp3');
+let ufoSound = new Audio('../content/audio/ufo-flying.mp3');
 
 function preload() {
     img = loadImage('../content/img/gnarp-in-ufo.png'); 
