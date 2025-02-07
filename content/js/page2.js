@@ -39,4 +39,4 @@ function draw() {
   }
 }
 
-draw()
+draw();
