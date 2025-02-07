@@ -2,6 +2,7 @@ let kitty;
 let fox;
 let xPos = 0;
 let triggered = false;
+let ufoSound = new Audio('../content/audio/ufo-flying.mp3');
 
 function preload() {
     kitty = loadImage('../content/img/gnarp-in-ufo-tractorbeam.png'); 
@@ -10,6 +11,7 @@ function preload() {
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
+    ufoSound.play();
 }
 
 function draw() {
