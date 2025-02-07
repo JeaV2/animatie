@@ -25,7 +25,7 @@ function draw() {
     console.log(`Spaceship lowered to ${USH}`);
   }
   else {
-    USH += 1;
+    USH += 1.5;
     console.log(USH);
   }
   if (USH === 300 && triggered === false) {
